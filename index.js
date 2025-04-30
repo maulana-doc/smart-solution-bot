@@ -27,9 +27,10 @@ bot.on('text', (ctx) => {
     ctx.reply('Laporkan gangguan ke admin:\n- Nama\n- Lokasi\n- Keluhan singkat\nWA: +6282299911594');
   } else if (pesan.includes('tentang') || pesan.includes('smart solution')) {
     ctx.reply('Smart Solution adalah penyedia jaringan internet komunitas dengan koneksi stabil & terpercaya.');
-  } else {
-    ctx.reply('Maaf, saya belum memahami pesan Anda. Silakan hubungi Admin Smart Solution.');
-  }
+} else {
+  ctx.reply('Maaf, saya belum memahami pesan Anda.\nSilakan lanjut ke Admin via WhatsApp:\nhttps://wa.me/6282299911594');
+}
+
 });
 
 bot.launch();
