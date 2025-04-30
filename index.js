@@ -34,3 +34,8 @@ bot.on('text', (ctx) => {
 });
 
 bot.launch();
+
+
+bot.on('message', (ctx) => {
+  console.log("Chat ID:", ctx.chat.id);
+});
